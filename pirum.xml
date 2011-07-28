@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <server>
-  <name>TestingBot</name>
+  <name>testingbot.github.com/pear</name>
   <summary>TestingBot PEAR channel</summary>
   <alias>testingbot</alias>
   <url>http://testingbot.github.com/pear</url>
