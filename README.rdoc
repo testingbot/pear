@@ -4,7 +4,7 @@ Testingbot.com is a website where you can use our cloud based Selenium grid. Tes
 
 == How to install?
 
-Please visit our PEAR channel on http://testingbot.github.com/pear/
+Please visit our PEAR channel on http://testingbot.github.com/pear
 
 == More information
 
