@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://testingbot.github.com/pear</id>
-    <updated>2011-07-31T21:04:39+02:00</updated>
+    <updated>2011-10-23T18:39:50+02:00</updated>
     <title>TestingBot PEAR channel Latest Releases</title>
     <link href="http://testingbot.github.com/pear/feed.xml" rel="self" />
     <author>
