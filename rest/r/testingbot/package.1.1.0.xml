@@ -10,11 +10,11 @@
   <email>info@testingbot.com</email>
   <active>yes</active>
  </lead>
- <date>2011-07-31</date>
- <time>19:00:34</time>
+ <date>2011-12-05</date>
+ <time>15:27:32</time>
  <version>
-  <release>1.0.0</release>
-  <api>1.0.0</api>
+  <release>1.1.0</release>
+  <api>1.1.0</api>
  </version>
  <stability>
   <release>stable</release>
@@ -25,31 +25,31 @@
 Selenium extension to be used with testingbot.com
  </notes>
  <contents>
-  <dir name="/">
-   <file baseinstalldir="/" md5sum="c3ca7a8c0d3b58773c818c4342a7c7da" name="TestingBot/PHPUnit/Extensions/TestingBotTestCase.php" role="php" />
-   <file baseinstalldir="/" md5sum="707ace792bb94b64a7a5926c920544d3" name="TestingBot/PHPUnit/Extensions/SeleniumTestCase/TestingBotDriver.php" role="php" />
-   <file baseinstalldir="/" md5sum="188688e5e3dd395821427774d9a483de" name="TestingBot/testingbot.php" role="script">
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="41a60c991ea6891e1cd47889b1b1c99f" name="setup.php" role="php">
+    <tasks:postinstallscript>
+     <tasks:paramgroup>
+      <tasks:id>ask</tasks:id>
+      <tasks:param>
+       <tasks:name>key</tasks:name>
+       <tasks:prompt>TestingBot API Key</tasks:prompt>
+       <tasks:type>string</tasks:type>
+      </tasks:param>
+      <tasks:param>
+       <tasks:name>secret</tasks:name>
+       <tasks:prompt>TestingBot API Secret</tasks:prompt>
+       <tasks:type>string</tasks:type>
+      </tasks:param>
+     </tasks:paramgroup>
+    </tasks:postinstallscript>
+   </file>
+   <file baseinstalldir="" md5sum="2af060bd3660f0c1d05d3dbecd4da5aa" name="testingbot.php" role="script">
     <tasks:replace from="/usr/bin/env php" to="php_bin" type="pear-config" />
     <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
     <tasks:replace from="@package_version@" to="version" type="package-info" />
    </file>
-   <file baseinstalldir="/" md5sum="6b5bbf9e5e13a6d5a23eabd3f9c61641" name="TestingBot/setup.php" role="php">
-    <tasks:postinstallscript>
-     <paramgroup>
-      <id>ask</id>
-      <param>
-       <name>key</name>
-       <prompt>TestingBot API Key</prompt>
-       <type>string</type>
-      </param>
-      <param>
-       <name>secret</name>
-       <prompt>TestingBot API Secret</prompt>
-       <type>string</type>
-      </param>
-     </paramgroup>
-    </tasks:postinstallscript>
-   </file>
+   <file baseinstalldir="/" md5sum="2861b402355fd930d793900c61b66e07" name="PHPUnit/Extensions/TestingBotTestCase.php" role="php" />
+   <file baseinstalldir="/" md5sum="e6aad6e373c76b8da1538dedc2059a94" name="PHPUnit/Extensions/SeleniumTestCase/TestingBotDriver.php" role="php" />
   </dir>
  </contents>
  <dependencies>
@@ -64,23 +64,23 @@ Selenium extension to be used with testingbot.com
  </dependencies>
  <phprelease>
   <filelist>
-   <install as="testingbot" name="TestingBot/testingbot.php" />
+   <install as="testingbot" name="testingbot.php" />
   </filelist>
  </phprelease>
  <changelog>
   <release>
    <version>
-    <release>1.0.0</release>
-    <api>1.0.0</api>
+    <release>1.1.0</release>
+    <api>1.1.0</api>
    </version>
    <stability>
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2011-07-31</date>
+   <date>2011-12-05</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
    <notes>
-testingbot.com
+Selenium extension to be used with testingbot.com
    </notes>
   </release>
  </changelog>
