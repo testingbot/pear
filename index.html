@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>TestingBot PEAR channel</title>
-    <link rel="stylesheet" type="text/css" href="http://testingbot.github.com/pear/pirum.css" />
+    <link rel="stylesheet" type="text/css" href="pirum.css" />
     <link rel="alternate" type="application/rss+xml" href="http://testingbot.github.com/pear/feed.xml" title="TestingBot PEAR channel Latest Releases" />
 </head>
 <body>
@@ -13,8 +13,6 @@
         </div>
         <div id="bd">
             <div class="yui-g">
-                <h2>Using this Channel</h2>
-                <p>This channel is to be used with the PEAR installer.</p>
                 <em>Registering</em> the channel:
                 <pre><code>pear channel-discover testingbot.github.com/pear</code></pre>
                 <em>Listing</em> available packages:
@@ -27,23 +25,18 @@ pear install testingbot/package_name-beta</code></pre>
                 <em>Receiving</em> updates via a <a href="http://testingbot.github.com/pear/feed.xml">feed</a>:
                 <pre><code>http://testingbot.github.com/pear/feed.xml</code></pre>
 
-                <h2>Packages</h2>
-
                                     <h3>TestingBot<small> - TestingBot PHPUnit Extension</small></h3>
                     <p>Use this extension for your Selenium tests with TestingBot.com</p>
-                    <ul>
-                        <li><strong>Package name</strong>: TestingBot</li>
-                        <li><strong>License</strong>: BSD Style</li>
-                                                <li><strong>Maintainers</strong>: Jochen (as lead)</li>
-                                                <li><strong>Releases</strong>: <a href="http://testingbot.github.com/pear/get/TestingBot-1.0.0.tgz">1.0.0</a> (stable)</li>
-                        <li><strong>Install command</strong>: pear install testingbot/TestingBot</li>
-                    </ul>
-
-                    <hr />
+                    <table>
+                        <tr><th>Install command</th><td><strong>pear install testingbot/TestingBot</strong></td></tr>
+                                                <tr><th>License</th><td>BSD Style</td></tr>
+                                                                        <tr><th>Maintainers</th><td>Jochen <small>(as lead)</small></td></tr>
+                                                <tr><th>Releases</th><td><a href="http://testingbot.github.com/pear/get/TestingBot-1.0.0.tgz">1.0.0</a> <small>(stable)</small></td></tr>
+                    </table>
                             </div>
         </div>
         <div id="ft">
-            <p><small>The <em>testingbot.github.com/pear</em> PEAR Channel Server is proudly powered by <a href="http://www.pirum-project.org/">Pirum</a> 1.0.2</small></p>
+            <p><small>The <em>testingbot.github.com/pear</em> PEAR Channel Server is proudly powered by <a href="http://pirum.sensiolabs.org/">Pirum</a> 1.0.4</small></p>
         </div>
     </div>
 </body>

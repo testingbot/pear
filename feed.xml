@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://testingbot.github.com/pear</id>
-    <updated>2011-10-23T18:46:51+02:00</updated>
+    <updated>2011-12-05T13:53:45+01:00</updated>
     <title>TestingBot PEAR channel Latest Releases</title>
     <link href="http://testingbot.github.com/pear/feed.xml" rel="self" />
     <author>
@@ -17,7 +17,9 @@
         </author>
         <updated>2011-07-31T19:00:34+02:00</updated>
         <content>
-            Use this extension for your Selenium tests with TestingBot.com
+            
+Selenium extension to be used with testingbot.com
+ 
         </content>
     </entry>
 </feed>
