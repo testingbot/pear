@@ -3,6 +3,10 @@
     <p>TestingBot</p>
     <c>testingbot.github.com/pear</c>
     <r>
+        <v>1.1.2</v>
+        <s>stable</s>
+    </r>
+    <r>
         <v>1.1.1</v>
         <s>stable</s>
     </r>
