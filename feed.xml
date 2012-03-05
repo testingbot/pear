@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://testingbot.github.com/pear</id>
-    <updated>2012-03-02T19:31:58+01:00</updated>
+    <updated>2012-03-05T19:30:37+01:00</updated>
     <title>TestingBot PEAR channel Latest Releases</title>
     <link href="http://testingbot.github.com/pear/feed.xml" rel="self" />
     <author>
@@ -9,6 +9,19 @@
     </author>
 
     <entry>
+        <title>TestingBot 1.1.6 (stable)</title>
+        <link href="http://testingbot.github.com/pear/get/TestingBot-1.1.6.tgz" />
+        <id>http://testingbot.github.com/pear/get/TestingBot-1.1.6.tgz</id>
+        <author>
+            <name>jochen</name>
+        </author>
+        <updated>2012-03-05T18:30:15+01:00</updated>
+        <content>
+            
+Selenium extension to be used with testingbot.com
+ 
+        </content>
+    </entry>    <entry>
         <title>TestingBot 1.1.5 (stable)</title>
         <link href="http://testingbot.github.com/pear/get/TestingBot-1.1.5.tgz" />
         <id>http://testingbot.github.com/pear/get/TestingBot-1.1.5.tgz</id>
