@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>TestingBot</name>
+ <channel>testingbot.github.com/pear</channel>
+ <summary>TestingBot PHPUnit Extension</summary>
+ <description>Use this extension for your Selenium tests with TestingBot.com</description>
+ <lead>
+  <name>Jochen</name>
+  <user>jochen</user>
+  <email>info@testingbot.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2012-03-06</date>
+ <time>22:06:14</time>
+ <version>
+  <release>1.1.7</release>
+  <api>1.1.7</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+ <notes>
+Selenium extension to be used with testingbot.com
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="4c368bf8d9acc582c09d7e132cba624a" name="setup.php" role="php">
+    <tasks:postinstallscript>
+     <tasks:paramgroup>
+      <tasks:id>ask</tasks:id>
+      <tasks:param>
+       <tasks:name>key</tasks:name>
+       <tasks:prompt>TestingBot API Key</tasks:prompt>
+       <tasks:type>string</tasks:type>
+      </tasks:param>
+      <tasks:param>
+       <tasks:name>secret</tasks:name>
+       <tasks:prompt>TestingBot API Secret</tasks:prompt>
+       <tasks:type>string</tasks:type>
+      </tasks:param>
+     </tasks:paramgroup>
+    </tasks:postinstallscript>
+   </file>
+   <file baseinstalldir="" md5sum="9f638f82764626e9f0dca504d410692a" name="testingbot.php" role="script">
+    <tasks:replace from="/usr/bin/env php" to="php_bin" type="pear-config" />
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="/" md5sum="ab61ac489f21783d74d0580018ede102" name="PHPUnit/Extensions/TestingBotTestCase.php" role="php" />
+   <file baseinstalldir="/" md5sum="52a18fe943b3e2012e10593c0e850c90" name="PHPUnit/Extensions/SeleniumTestCase/TestingBotDriver.php" role="php" />
+   <file baseinstalldir="/" md5sum="1b94b7412e1dd0a7d4dd9fa78190bc81" name="PHPUnit/Extensions/SeleniumTestCase/Autoload.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="testingbot" name="testingbot.php" />
+  </filelist>
+ </phprelease>
+ <changelog>
+  <release>
+   <version>
+    <release>1.1.7</release>
+    <api>1.1.7</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-03-06</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+   <notes>
+Selenium extension to be used with testingbot.com
+   </notes>
+  </release>
+ </changelog>
+</package>
